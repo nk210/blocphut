@@ -2,8 +2,8 @@ local VIM = game:GetService("VirtualInputManager")
 local rng = Random.new()
 
 -- ====== CẤU HÌNH DELAY ======
-local MIN_DELAY = 0.4
-local MAX_DELAY = 0.6
+local MIN_DELAY = 0.1
+local MAX_DELAY = 0.2
 
 -- Hàm thực hiện nhấn phím giả lập
 local function pressKey(keyCode)
