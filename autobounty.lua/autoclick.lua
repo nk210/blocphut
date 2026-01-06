@@ -1,11 +1,33 @@
+local VIM = game:GetService("VirtualInputManager")
+local rng = Random.new()
+
+-- ====== CẤU HÌNH DELAY ======
+local MIN_DELAY = 0.4
+local MAX_DELAY = 0.6
+
+-- Hàm thực hiện nhấn phím giả lập
+local function pressKey(keyCode)
+    VIM:SendKeyEvent(true, keyCode, false, game) -- Nhấn xuống
+    task.wait(0.05)                             -- Giữ phím một chút cho chắc chắn
+    VIM:SendKeyEvent(false, keyCode, false, game)-- Thả ra
+end
+
+task.spawn(function()
+    print("Bắt đầu Spam Space và Q...")
     while true do
-        -- random min / max mỗi vòng
-        local delay = rng:NextNumber(minDelay, maxDelay)
+        -- Tạo delay ngẫu nhiên cho mỗi vòng lặp
+        local delay = rng:NextNumber(MIN_DELAY, MAX_DELAY)
 
-        -- Giả lập bấm phím Space (Nhảy)
-        VIM:SendKeyEvent(true, Enum.KeyCode.Space, false, game)
-        task.wait(0.05) -- Thời gian giữ phím
-        VIM:SendKeyEvent(false, Enum.KeyCode.Space, false, game)
+        -- Thực hiện nhấn Space
+        pressKey(Enum.KeyCode.Space)
+        
+        -- Nghỉ một chút siêu ngắn giữa 2 phím để mượt hơn
+        task.wait(0.05) 
+        
+        -- Thực hiện nhấn Q
+        pressKey(Enum.KeyCode.Q)
 
+        -- Đợi hết thời gian delay trước khi lặp lại
         task.wait(delay)
     end
+end)
