@@ -1,4 +1,4 @@
-local VIM = game:GetService("VirtualInputManager")
+Local VIM = game:GetService("VirtualInputManager")
 local cam = workspace.CurrentCamera
 
 local rng = Random.new()
@@ -7,9 +7,10 @@ local rng = Random.new()
 local MIN_DELAY_RANGE = {0.4, 0.5}
 local MAX_DELAY_RANGE = {0.5, 0.6}
 
--- ====== TỌA ĐỘ CLICK ======
-local CLICK_X_RATIO = 0.75
-local CLICK_Y_RATIO = 0.68
+-- ====== TỌA ĐỘ CLICK (Đã chỉnh sửa cho nút Jump) ======
+-- Nút Jump nằm ở góc dưới bên phải
+local CLICK_X_RATIO = 0.88  -- Tăng lên để dời sang phải (88% chiều ngang)
+local CLICK_Y_RATIO = 0.82  -- Tăng lên để dời xuống dưới (82% chiều dọc)
 -- =======================================
 
 task.spawn(function()
@@ -30,10 +31,10 @@ task.spawn(function()
         local x = vp.X * CLICK_X_RATIO
         local y = vp.Y * CLICK_Y_RATIO
 
+        -- Gửi sự kiện click
         VIM:SendMouseButtonEvent(x, y, 0, true, game, 0)
         VIM:SendMouseButtonEvent(x, y, 0, false, game, 0)
 
         task.wait(delay)
     end
 end)
-
